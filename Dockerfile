@@ -1,4 +1,4 @@
-# VERSION: 0.0.3
+# VERSION: 0.0.4
 FROM golang
 
 # enable go modules
@@ -11,6 +11,7 @@ ENV CONFIG_PATH="/config"
 RUN git clone --depth 1 https://github.com/tjsoler/REM -b develop /app
 
 WORKDIR /app
+
 
 RUN go build -o main .
 

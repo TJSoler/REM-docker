@@ -1,3 +1,4 @@
+# VERSION: 0.0.3
 FROM golang
 
 # enable go modules
@@ -12,7 +13,6 @@ RUN git clone --depth 1 https://github.com/tjsoler/REM -b develop /app
 WORKDIR /app
 
 RUN go build -o main .
-
 
 # set mountpoints for the host to store the config and downloads.
 VOLUME [ "/downloads", "/config" ]

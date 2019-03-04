@@ -5,7 +5,7 @@ FROM golang
 ENV GO111MODULE=on
 
 # set env vars for the config and download folders
-ENV DOWNLOAD_PATH="/downloads/"
+ENV DOWNLOAD_PATH="/downloads"
 ENV CONFIG_PATH="/config"
 
 RUN git clone --depth 1 https://github.com/tjsoler/REM -b develop /app
